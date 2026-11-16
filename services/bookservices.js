@@ -10,7 +10,7 @@ export const createbook = async(book) => {
     return bookId;
 };
 
-export const update = async(book) => {
+export const updatebook = async(book) => {
     const updatebook = await bookmodel.update(book);
     return updatebook.affectedRows;
 };
