@@ -3,9 +3,9 @@ import express from 'express';
 
 const bookroutes = express.Router();
 
-bookroutes.get('/all', bookcontrollers.fetchAllBooks);
-bookroutes.post('/', bookcontrollers.createbook);
-bookroutes.put('/:id', bookcontrollers.editbook);
-bookroutes.delete('/:id', bookcontrollers.deletebook);
+bookroutes.get('/', bookcontrollers.fetchAllBooks);
+bookroutes.post('/', bookcontrollers.createBooks);
+bookroutes.put('/:id', bookcontrollers.editBooks);
+bookroutes.delete('/:id', bookcontrollers.deleteBooks);
 
 export default bookroutes;
